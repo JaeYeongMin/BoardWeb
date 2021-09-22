@@ -15,8 +15,8 @@
   </resultMap>
 
   <insert id="insertBoard">
-    INSERT INTO BOARD(TITLE, WRITER, CONTENT) 
-    VALUES(#{title},#{writer},#{content})
+    INSERT INTO BOARD(SEQ , TITLE, WRITER, CONTENT, DB_STATUS) 
+    VALUES((SELECT (MAX(SEQ)+1) FROM BOARD) , #{title},#{writer},#{content} , 'A')
   </insert>
 
   <update id="updateBoard">

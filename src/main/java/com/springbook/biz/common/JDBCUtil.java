@@ -9,8 +9,10 @@ public class JDBCUtil {
     
     public static Connection getConnection() {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/mjydbzz?serverTimezone=UTC","mjydbzz","tkadms4379!");
+            // Class.forName("com.mysql.cj.jdbc.Driver");
+            // return DriverManager.getConnection("jdbc:mysql://localhost:3306/mjydbzz?serverTimezone=UTC","mjydbzz","tkadms4379!");
+        	Class.forName("org.h2.Driver");
+        	return DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","");
         } catch (Exception e) {
             e.printStackTrace();
         }
