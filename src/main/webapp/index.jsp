@@ -7,10 +7,10 @@
 <title>Main Page</title>
 </head>
 <body>
-  <h1>게시판 프로그램</h1>
+  <h1>게시판 프로그램 수정입니다.</h1>
   <hr>
     <a href="login.do">로그인</a> <br><br><br>
-    <a href="getBoardList.do">글 목록 바로가기 </a> 
+    <a href="getBoardList.do">글 목록 바로가기 </a>
   <hr>
 </body>
 </html>
